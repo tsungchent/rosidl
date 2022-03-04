@@ -67,7 +67,8 @@ VALID_PACKAGE_NAME_PATTERN = re.compile(
 VALID_FIELD_NAME_PATTERN = VALID_PACKAGE_NAME_PATTERN
 # relaxed patterns used for compatibility with ROS 1 messages
 # VALID_FIELD_NAME_PATTERN = re.compile('^[A-Za-z][A-Za-z0-9_]*$')
-VALID_MESSAGE_NAME_PATTERN = re.compile('^[A-Z][A-Za-z0-9]*$')
+# VALID_MESSAGE_NAME_PATTERN = re.compile('^[A-Z][A-Za-z0-9]*$')
+VALID_MESSAGE_NAME_PATTERN = re.compile('^[A-Za-z]+[_]?[A-Za-z0-9_]*$')
 # relaxed patterns used for compatibility with ROS 1 messages
 # VALID_MESSAGE_NAME_PATTERN = re.compile('^[A-Za-z][A-Za-z0-9]*$')
 VALID_CONSTANT_NAME_PATTERN = re.compile('^[A-Z]([A-Z0-9_]?[A-Z0-9]+)*$')
